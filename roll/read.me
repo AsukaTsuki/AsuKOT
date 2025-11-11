@@ -1,0 +1,35 @@
+AsuKOT - Bot de roll
+====================
+
+Description
+-----------
+Ce bot de roll permet d'effectuer des lancers de dés automatisés pour les jeux de rôle, les simulations et les tirages aléatoires. Il centralise les règles courantes de roll, applique des modificateurs et conserve un historique des résultats.
+
+Fonctionnalités principales
+---------------------------
+- Lancer de dés standard : supporte les notations classiques (ex : 1d6, 3d8).
+- Dés personnalisés : possibilité de définir des faces et des probabilités personnalisées.
+- Modificateurs : ajout/soustraction de valeurs fixes (ex : 2d10+3).
+- Avantage/Désavantage : calcule et retourne le meilleur ou le pire résultat entre deux lancers.
+- Jets de plusieurs types : jets de dégâts, jets de compétence, jets de sauvegarde.
+- Résumé détaillé : affiche le détail de chaque dé, la somme et le résultat final.
+- Historique : enregistre et peut restituer les derniers lancers par utilisateur ou canal.
+- Validation des entrées : détection et message d'erreur en cas de syntaxe incorrecte.
+- Intégration configurable : paramètres pour préfixe de commande, limites de dés et permissions.
+
+Exemples d'utilisation (syntaxelocale)
+--------------------------------------
+- /roll 1d20+5           -> lance un d20 et ajoute +5
+- /roll 3d6              -> lance trois d6 et affiche le total + détails
+- /roll advantage 1d20   -> lance deux d20 et prend le meilleur
+- /roll custom 1dF       -> lance un dé F (Fudge) si pris en charge
+
+Configuration et limites
+------------------------
+- Préfixe et permissions configurables via le fichier de config.
+- Limite sur le nombre de dés et faces pour éviter les abus (configurable).
+- Logs optionnels pour audit et statistiques.
+
+Contribution
+------------
+Les contributions (rapports de bugs, améliorations) sont bienvenues. Merci de respecter le format des issues et de fournir des exemples reproductibles.
